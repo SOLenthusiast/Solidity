@@ -1,8 +1,9 @@
 pragma solidity ^0.8.0;
 // SPDX-License-Identifier: GPL-3.0
 
-//Map user address to their in-game level
+//Associate user address to their in-game level
 //Build a function to identify user current level
+//Set this address to level 10 and display level
 
 contract MyContract {
 
