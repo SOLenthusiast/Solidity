@@ -1,5 +1,6 @@
 pragma solidity ^0.8.0;
 // SPDX-License-Identifier: GPL-3.0
+// Change file to MyContract.sol
 
     //Create an array  
     //a function that checks if a given number is even
