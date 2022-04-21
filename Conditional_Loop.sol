@@ -1,6 +1,11 @@
 pragma solidity ^0.8.0;
 // SPDX-License-Identifier: GPL-3.0
 
+    //Create an array  
+    //a function that checks if a given number is even
+    //a function that counts the even numbers in the array
+    //check if address currently interacting with smart 
+    //contract is the one that deployed
 
 contract MyContract {
     
