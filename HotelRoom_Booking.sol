@@ -54,9 +54,9 @@ contract MyContract {
     }
 
     
-    function Booking() payable public costs OnlyVacant {
+    receive() external payable costs OnlyVacant {
 
-    //    require(currentStatus == Statuses.Vacant, "Currently occupied hun!")
+    //   require(currentStatus == Statuses.Vacant, "Currently occupied hun!")
     //   require(msg.value >= 2 ether, "Not enough Moula!")
 
         owner.transfer(msg.value);
