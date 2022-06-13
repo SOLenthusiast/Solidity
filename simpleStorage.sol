@@ -1,32 +1,24 @@
-// SPX-License-Identifier: MIT
-pragma solidity ^0.8.8; 
+//SPX-License-Identifier: MIT
+pragma solidity ^0.8.8;
 
-contract SimpleStorage2 {
+//Deployed on EVM,and metamask
+contract simplestStorage {
 
-    uint favNumber;
-//    People public person = People({favNumber: 2, name: "Ben"});
-//    People public person2 = People({favNumber: 3, name: "ali"});
+    //uint256 public myFavNumber;
+    mapping(string => uint256) public nameForNumber;
 
     struct People {
-        uint256 favNumber;
+        uint256 myfavNumber;
         string name;
     }
 
-    //dynamic array [3] = only max of 3 in the array
-    People[] public people;
+    //People public somebodyelse = People({myfavNumber: 1, name: "Ben"});
+    People[] public somebody;
 
-    function store(uint256 _favNumer) public {
-        favNumber = _favNumer;
-        retirve();
-    }
-
-    function retirve() public view returns(uint256) {
-        return favNumber;
-    }
-
-    function addPerson(string memory _name, uint256 _favNumer) public {
-        People memory NewPerson = People({favNumber: _favNumer, name: _name});
-        people.push(NewPerson);
- //       people.push(People(_favNumer, _name));
+    function addSomebody(uint256 _favNumer, string memory _name) public {
+        //People memory NewPerson = People(_favNumer, _name);
+        //somebody.push(NewPerson);
+        somebody.push(People(_favNumer, _name));
+        nameForNumber[_name] = _favNumer;
     }
 }
